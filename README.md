@@ -5,7 +5,7 @@ Advanced graph theory operations for Graph Databases and that can be used as an 
 
 Rexster provides a RESTful shell to any Blueprints-complaint graph database. This HTTP web service provides: a set of standard low-level GET, POST, and DELETE methods, a flexible extension model which allows plug-in like development for external services (such as ad-hoc graph queries through Gremlin), and a browser-based interface called The Dog House.
 
-A graph database hosted in the OrientDB can be configured in Rexster and then accessed using the standard RESTful interface powered by the Rexster web server.
+A graph database can be configured in Rexster and then accessed using the standard RESTful interface powered by the Rexster web server.
 
 #### Installation
 
@@ -66,7 +66,7 @@ $ cd graphDB-node && npm install
 
 To run your app, you need to run these step by step :
 
-1. Orientdb server.
+1. Your graph database server.
 2. Rexster server.
 3. Node.js application.
 
@@ -138,9 +138,9 @@ Nested request :
 ```javascript
 var Graph = require('{{ PATH TO GRAPH.JS }}');
 var g = new Graph();
-g.filter('', '{{ COLLECTION NAME }}', {
+g.filter('{{ CONNECTION STRING }}', '{{ COLLECTION NAME }}', {
   'lastname': 'test',
-  'familySituation': 'single'
+  'familySituation': 'maried'
 }, function(err, res) {
     if (err) throw err;
     console.log(res);
