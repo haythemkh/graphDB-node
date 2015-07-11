@@ -172,7 +172,7 @@ function getStudentsOfProfNotClassmatesWith(app) {
     var idStd = '#12:3';
 
     p.bothByLabel('out', idProf, 'teachs', function(e1, r1) {
-        ss.each(r1, {
+        s.each(r1, {
             name: 'inV'
         }, function(e2, r2) {
             var arr1 = s.dedup(r2);
