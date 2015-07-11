@@ -1,5 +1,5 @@
 # graphDB-node
-Advanced graph theory operations for Graph Databases and that can be an extension for sails-orientdb.
+Advanced graph theory operations for Graph Databases and that can be used as an extension for [sails-orientdb](https://github.com/appscot/sails-orientdb).
 
 ## Rexster
 
