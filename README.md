@@ -60,8 +60,8 @@ $ ./rexster.sh -s -c ../config/rexster.xml
 ## Installation
 
 ```bash
-$ git clone git@github.com:atefzed/gremlin-node-orientdb.git
-$ cd gremlin-node-orientdb && npm install
+$ git clone git@github.com:haythemkh/graphDB-node.git
+$ cd graphDB-node && npm install
 ```
 
 To run your app, you need to run these step by step :
