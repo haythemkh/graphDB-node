@@ -1,4 +1,4 @@
-# graphDB-node
+# GraphDB Node
 Advanced graph operations for Graph Databases and that can be used as an extension for [sails-orientdb](https://github.com/appscot/sails-orientdb).
 
 ## Rexster
