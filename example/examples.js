@@ -65,7 +65,7 @@ o.bothE('id', '#12:15', function(err, resp) {
 var s = app.models.student;
 var p = app.models.prof;
 
-// Get all classmates of a student
+// Get all of the classmates of a student
 function getMyClassmates(app) {
     var idStd = '#12:0';
     s.bothByLabel('out', idStd, 'follows', function(e1, r1) {
@@ -78,7 +78,7 @@ function getMyClassmates(app) {
     })
 }
 
-// Get all students who took courses taught by a professor and not classmates with a student
+// Get all of the students who took courses taught by a professor and not classmates with a student
 function getStudentsOfProfNotClassmatesWith(app) {
     var idProf = '#11:1';
     var idStd = '#12:3';
@@ -103,7 +103,7 @@ function getStudentsOfProfNotClassmatesWith(app) {
     })
 }
 
-// Get all classmates of a student
+// Get all of the classmates of a student
 function getMyFriends(app) {
     var id = '#12:0';
     s.bothByLabel('out', id, 'friend', function(e1, r1) {
